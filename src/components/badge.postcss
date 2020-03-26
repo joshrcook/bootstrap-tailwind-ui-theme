@@ -1,0 +1,123 @@
+.badge {
+    @apply inline-flex;
+    @apply items-center;
+    @apply px-2.5;
+    @apply py-0.5;
+    @apply rounded-full;
+    @apply text-xs;
+    @apply font-medium;
+    @apply leading-4;
+}
+
+/* Sizes */
+.badge-lg {
+    @apply px-3;
+    @apply text-sm;
+    @apply leading-5;
+}
+
+/* Colors */
+.badge-primary {
+    @apply bg-indigo-100;
+    @apply text-indigo-800;
+}
+
+.badge-danger {
+    @apply bg-red-100;
+    @apply text-red-800;
+}
+
+.badge-success {
+    @apply bg-green-100;
+    @apply text-green-800;
+}
+
+.badge-warning {
+    @apply bg-yellow-100;
+    @apply text-yellow-800;
+}
+
+.badge-orange {
+    @apply bg-orange-100;
+    @apply text-orange-800;
+}
+
+.badge-teal {
+    @apply bg-teal-100;
+    @apply text-teal-800;
+}
+
+.badge-blue {
+    @apply bg-blue-100;
+    @apply text-blue-800;
+}
+
+.badge-purple {
+    @apply bg-purple-100;
+    @apply text-purple-800;
+}
+
+.badge-pink {
+    @apply bg-pink-100;
+    @apply text-pink-800;
+}
+
+.badge-light {
+    @apply bg-gray-100;
+    @apply text-gray-800;
+}
+
+.badge-dot {
+
+    &:before {
+        @apply relative;
+        @apply inline-flex;
+        @apply h-1.5;
+        @apply w-1.5;
+        @apply mr-1.5;
+        @apply rounded-full;
+        
+        content: '';
+    }
+
+    &.badge-primary:before {
+        @apply bg-indigo-400;
+    }
+
+    &.badge-danger:before {
+        @apply bg-red-400;
+    }
+
+    &.badge-success:before {
+        @apply bg-green-400;
+    }
+
+    &.badge-warning:before {
+        @apply bg-yellow-400;
+    }
+
+    &.badge-orange:before {
+        @apply bg-orange-400;
+    }
+
+    &.badge-teal:before {
+        @apply bg-teal-400;
+    }
+
+    &.badge-blue:before {
+        @apply bg-blue-400;
+    }
+
+    &.badge-purple:before {
+        @apply bg-purple-400;
+    }
+
+    &.badge-pink:before {
+        @apply bg-pink-400;
+    }
+
+    &.badge-light:before {
+        @apply bg-gray-400;
+    }
+}
+
