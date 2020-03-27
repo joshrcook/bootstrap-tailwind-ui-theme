@@ -1,13 +1,14 @@
 {
   "name": "bootstrap-tailwind-ui-theme",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
   "repository": "git@github.com:joshrcook/bootstrap-tailwind-ui-theme.git",
   "author": "joshrcook <joshua.cook@snapav.com>",
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^9.7.5",
     "parcel-bundler": "^1.12.4",
+    "parcel-plugin-bundle-visualiser": "^1.2.0",
     "postcss-import": "^12.0.1",
     "postcss-nested": "^4.2.1"
   },
@@ -16,7 +17,7 @@
     "tailwindcss": "^1.2.0"
   },
   "scripts": {
-    "start": "./node_modules/.bin/parcel watch ./src/index.postcss",
-    "build": "./node_modules/.bin/parcel build ./src/index.postcss"
+    "start": "./node_modules/.bin/parcel watch ./src/app.postcss ./src/marketing.postcss",
+    "build": "rm -rf dist/* && ./node_modules/.bin/parcel build ./src/app.postcss ./src/marketing.postcss"
   }
 }

@@ -1,0 +1,69 @@
+.type {
+    @apply text-base;
+    @apply leading-6;
+    @apply text-gray-500;
+}
+
+.display-4 {
+    @apply text-4xl;
+    @apply tracking-tight;
+    @apply leading-10;
+    @apply font-extrabold;
+    @apply text-gray-900;
+}
+
+@screen sm {
+    .display-4 {
+        @apply text-5xl;
+        @apply leading-none;
+    }
+}
+
+@screen md {
+    .display-4 {
+        @apply text-6xl;
+    }
+}
+
+.h2 {
+
+}
+
+.h3 {
+
+}
+
+.lead {
+    @apply mt-3;
+    @apply text-base;
+    @apply text-gray-500;
+    @apply font-normal;
+}
+
+@screen sm {
+    .lead {
+        @apply text-lg;
+    }
+}
+
+@screen md {
+    .lead {
+        @apply mt-5;
+        @apply text-xl;
+        @apply max-w-3xl;
+    }
+}
+
+.label {
+    @apply text-sm;
+    @apply font-semibold;
+    @apply uppercase;
+    @apply tracking-wide;
+    @apply text-gray-500;
+}
+
+@screen sm {
+    .label {
+        @apply text-base;
+    }
+}
