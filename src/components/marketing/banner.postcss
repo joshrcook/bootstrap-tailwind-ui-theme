@@ -1,0 +1,31 @@
+.banner {
+    @apply relative;
+    @apply bg-indigo-600;
+}
+
+.banner-content {
+    @apply max-w-screen-xl;
+    @apply mx-auto;
+    @apply py-3;
+    @apply px-3;
+    @apply text-white;
+    @apply font-medium;
+
+    a {
+        @apply text-white;
+        @apply font-bold;
+        @apply underline;
+    }
+}
+
+@screen sm {
+    .banner-content {
+        @apply px-6;
+    }
+}
+
+@screen lg {
+    .banner-content  {
+        @apply px-8;
+    }
+}
