@@ -20,8 +20,10 @@
     "tailwindcss": "^1.2.0"
   },
   "scripts": {
-    "start": "./node_modules/.bin/postcss ./src/*.postcss --dir ./dist --ext .css -w --verbose",
-    "clean": "rm -rf ./dist",
-    "build": "yarn run clean && ./node_modules/.bin/postcss ./src/*.postcss --dir ./dist --ext .css --verbose"
+    "start": "yarn run clean:dev && ./node_modules/.bin/postcss ./src/*.postcss --dir ./build-dev --ext .css -w --verbose",
+    "clean:dev": "export NODE_ENV=development && rm -rf ./build-dev/*",
+    "clean:prod": "export NODE_ENV=production && rm -rf ./dist/*",
+    "build:dev": "yarn run clean:dev && ./node_modules/.bin/postcss ./src/*.postcss --dir ./build-dev --ext .css --verbose",
+    "build:prod": "yarn run clean:prod && ./node_modules/.bin/postcss ./src/*.postcss --dir ./dist --ext .css --verbose"
   }
 }
