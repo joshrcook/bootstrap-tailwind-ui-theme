@@ -3,7 +3,7 @@ module.exports = ({ env, file }) => ({
         'postcss-import': {},
         'tailwindcss': {},
         'postcss-nested': {},
-        'postcss-prefix-selector': env === production ? false : {
+        'postcss-prefix-selector': env === 'production' ? false : {
             prefix: `.tui-${file.basename.replace('.postcss', '')}`,
             transform: function (prefix, selector, prefixedSelector) {
                 if (selector === 'body') {
